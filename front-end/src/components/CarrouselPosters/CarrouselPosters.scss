@@ -1,0 +1,32 @@
+$padding: 10px;
+
+.carrousel-poster {
+    margin-bottom: 3.5%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .title {
+        font-weight: 700;
+    }
+    .description {
+        margin: 5px 0;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+    .list-posters {
+        margin: 0 -$padding;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding: 0 $padding;
+            width: 16.66666667%;
+            box-sizing: border-box;
+            list-style: none;
+        }
+    }
+}

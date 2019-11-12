@@ -1,0 +1,6 @@
+.button {
+    @include buttonTheme(#1ed760, transparent, #ffff, 30px);
+    &.outline {
+        @include buttonTheme(#000000, #ccc, #ffff, 30px);
+    }
+}

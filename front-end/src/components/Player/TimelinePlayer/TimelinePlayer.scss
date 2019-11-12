@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variables';
+
+.timeline-player {
+    margin: 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: 40%;
+    min-width: 500px;
+    .bar {
+        margin: 0 15px;
+        width: 100%;
+        background: rgba(94, 94, 94, 0.2);
+        border-radius: 30px;
+        height: 5px;
+        overflow: hidden;
+        .pct {
+            width: 20%;
+            height: 100%;
+            @include themify($themes) {
+                background-color: themed('colorHighlight');
+            }
+        }
+    }
+}

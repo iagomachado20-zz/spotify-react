@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import 'variables.scss';
+@import 'reset.scss';
+@import 'buttons.scss';
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: $font;
+}
+
+.appContainer {
+    height: 100vh;
+    padding: 0;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    overflow-y: auto;
+    padding-bottom: 110px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    grid-template-columns: 1fr 100%;
+    @include themify($themes) {
+        background-color: themed('backgroundColor');
+        color: themed('textColor')
+    }
+    .gradient-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.685);
+        z-index: 0;
+        left: 0;
+        top: 0;
+    }
+}
+
+.main-container {
+    width: calc(100% - 230px);
+    background: rgba(0, 0, 0, 0.281);
+    height: 100%;
+    overflow-y: auto;
+    padding: 30px 7.5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}

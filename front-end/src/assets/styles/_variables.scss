@@ -1,0 +1,19 @@
+@import 'functions.scss';
+
+$font: 'Open Sans', sans-serif;
+
+$themes: (
+    light: (
+        backgroundColor: white,
+        textColor: rgb(44, 44, 44),
+        buttonTextColor: #fff,
+        buttonColor: rgba(255, 94, 0, 0.89)
+    ),
+    dark: (
+        backgroundColor: #141414,
+        textColor: rgb(240, 240, 240),
+        buttonTextColor: #fff,
+        buttonColor: #1ed760,
+        colorHighlight: #1ed760
+    )
+)
